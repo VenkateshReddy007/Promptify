@@ -1,5 +1,12 @@
-# 🤖 Promptify — AI Credit Cost Analyzer
-> **A High-Performance Java Desktop Application for AI Prompt Auditing, Shadow Optimization, and Real-Time Token Cost Analysis.**
+# <p align="center">🤖 Promptify — AI Credit Cost Analyzer</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-17%2B-blue?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 17+">
+  <img src="https://img.shields.io/badge/MySQL-8.4-00758F?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/UI-Swing-E61F24?style=for-the-badge&logo=java&logoColor=white" alt="Swing UI">
+  <img src="https://img.shields.io/badge/API-Groq-F58220?style=for-the-badge&logo=google-gemini&logoColor=white" alt="Groq API">
+  <img src="https://img.shields.io/badge/Telegram-Alerts-26A69A?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Notifier">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License">
+</p>
 
 ---
 
@@ -16,16 +23,19 @@ All operations are executed asynchronously off the Event Dispatch Thread (EDT) u
 Promptify is built on a clean **Model-View-DAO-Service** architecture. The separation of concerns guarantees that UI panels remain light, database queries execute on background threads, and service layers are reusable.
 
 ### 1. High-Level Component Flow
-The following flowchart illustrates how the Swing UI communicates with background threads, services, external endpoints, and the MySQL database:
+The following flowchart illustrates how the Swing UI communicates with background threads, services, external endpoints, and the MySQL database. 
+
+> [!NOTE]
+> Box colors are styled with custom color classes, with text explicitly set to dark high-contrast values to support both light and dark GitHub layouts.
 
 ```mermaid
 flowchart TD
-    %% Styling
-    classDef ui fill:#e8f4f8,stroke:#1565c0,stroke-width:2px;
-    classDef worker fill:#fff3e0,stroke:#ef6c00,stroke-width:2px;
-    classDef service fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
-    classDef external fill:#fce4ec,stroke:#c2185b,stroke-width:2px;
-    classDef db fill:#ede7f6,stroke:#4527a0,stroke-width:2px;
+    %% Styling (Text color set to #1a1a2e to guarantee visibility on all themes)
+    classDef ui fill:#e8f4f8,stroke:#1565c0,stroke-width:2px,color:#1a1a2e;
+    classDef worker fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#1a1a2e;
+    classDef service fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1a1a2e;
+    classDef external fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#1a1a2e;
+    classDef db fill:#ede7f6,stroke:#4527a0,stroke-width:2px,color:#1a1a2e;
 
     %% Components
     UI[Dashboard / Tabs UI]:::ui
