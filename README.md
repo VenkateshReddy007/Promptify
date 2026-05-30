@@ -25,8 +25,7 @@ Promptify is built on a clean **Model-View-DAO-Service** architecture. The separ
 ### 1. High-Level Component Flow
 The following flowchart illustrates how the Swing UI communicates with background threads, services, external endpoints, and the MySQL database. 
 
-> [!NOTE]
-> Box colors are styled with custom color classes, with text explicitly set to dark high-contrast values to support both light and dark GitHub layouts.
+
 
 ```mermaid
 flowchart TD
