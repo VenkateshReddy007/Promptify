@@ -1,0 +1,4 @@
+out/
+mysql/data/
+*.class
+config.properties

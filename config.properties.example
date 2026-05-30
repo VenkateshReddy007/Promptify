@@ -1,0 +1,11 @@
+db.url=jdbc:mysql://localhost:3306/ai_analyzer
+db.user=root
+db.password=
+
+groq.api.key=YOUR_GROQ_API_KEY
+groq.api.url=https://api.groq.com/openai/v1/chat/completions
+groq.model=llama-3.3-70b-versatile
+groq.fallback.models=llama-3.1-8b-instant,meta-llama/llama-4-scout-17b-16e-instruct,groq/compound-mini
+
+telegram.bot.token=YOUR_BOT_TOKEN
+telegram.chat.id=YOUR_CHAT_ID
